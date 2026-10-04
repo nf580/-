@@ -75,3 +75,13 @@
 //Console.WriteLine(resultPesyat);
 //int resultCTO = a * b * c;
 //Console.WriteLine(resultCTO);
+
+
+//Шифр ЦЕЗАРЯ
+char[] Bykvi = { 'А', 'Б', 'В', 'Г', 'Д', 'Е', 'Ё', 'Ж', 'З', 'И', 'Й', 'К', 'Л', 'М', 'Н', 'О', 'П', 'Р', 'С', 'Т', 'У', 'Ф', 'Х', 'Ц', 'Ч', 'Ш', 'Щ', 'Ъ', 'Ы', 'Ь', 'Э', 'Ю', 'Я', };
+Console.WriteLine("Введите слово :");
+string userWord = Console.ReadLine();
+while (true);
+{
+
+}
