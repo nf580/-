@@ -135,7 +135,7 @@ class Program
         //            oshibka = false; break;
         //        }
         //    default:
-        //        Console.WriteLine("Ошибка");
+        //        Console.WriteLine("Ошибка, введите *, /, + или -");
         //        break;
         //}
         //if (oshibka = true)
@@ -145,141 +145,141 @@ class Program
 
         //Задание 13
         //Калькулятор доставки
-        //Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Пиццерия у дома~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-        //Console.WriteLine("Введите название товара: ");
-        //string nazvanie = Console.ReadLine();
-        //Console.WriteLine("Введите стоимость товара (в рублях): ");
-        //double stoimost = double.Parse(Console.ReadLine());
-        //Console.WriteLine("Введите вес товара (в килограммах): ");
-        //double ves = double.Parse(Console.ReadLine());
-        //Console.WriteLine("Введите расстояние доставки (в метрах): ");
-        //double rasstoyanie = double.Parse(Console.ReadLine());
-        //Console.WriteLine("Введите способ доставки: 1 - Обычная, 2 - Экспресс, 3 - Самовывоз");
-        //int sposob = int.Parse(Console.ReadLine());
-        //int stoimostVesa = 0;
-        //string tip = "Обычная";
-        ////Проверка ввода
-        //if (sposob != 1 & sposob != 2 & sposob != 3)
-        //{
-        //    Console.WriteLine("Ошибка, вводите либо 1, либо 2, либо 3");
-        //    return;
-        //}
-        //else
-        //{
-        //    //Стоимость
-        //    switch(sposob)
-        //    {
-        //        case 1:
-        //            if (ves < 1 || ves == 1)
-        //            {
-        //                stoimostVesa = 100;
-        //            }
-        //            if (ves > 1 & ves < 5 || ves == 5)
-        //            {
-        //                stoimostVesa = 200;
-        //            }
-        //            if (ves > 5 & ves < 10 || ves == 10)
-        //            {
-        //                stoimostVesa = 350;
-        //            }
-        //            if (ves > 10)
-        //            {
-        //                stoimostVesa = 500;
-        //            }
-        //            if (stoimost>5000)
-        //            {
-        //                stoimostVesa = 0;
-        //            }
-        //            if (ves < 0 || ves == 0)
-        //            {
-        //                Console.WriteLine("Ошибка, вес не может быть отрицательным");
-        //            }
-        //            break;
-        //        case 2:
-        //            if (ves < 1 || ves == 1)
-        //            {
-        //                stoimostVesa = 200;
-        //            }
-        //            if (ves > 1 & ves < 5 || ves == 5)
-        //            {
-        //                stoimostVesa = 400;
-        //            }
-        //            if (ves > 5 & ves < 10 || ves == 10)
-        //            {
-        //                stoimostVesa = 700;
-        //            }
-        //            if (ves > 10)
-        //            {
-        //                stoimostVesa = 1000;
-        //            }
-        //            if (stoimost > 5000)
-        //            {
-        //                stoimostVesa = 0;
-        //            }
-        //            if (ves < 0 || ves == 0)
-        //            {
-        //                Console.WriteLine("Ошибка, вес не может быть отрицательным");
-        //            }
-        //            break;
-        //        case 3:
-        //            stoimostVesa = 0;
-        //            break;
-        //    }
-        //    if (sposob == 1)
-        //    {
-        //        tip = "Обычная";
-        //    }
-        //    if (sposob == 2)
-        //    {
-        //        tip = "Экспресс";
-        //    }
-        //    if (sposob == 3)
-        //    {
-        //        tip = "Самовывоз";
-        //    }
-        //    Console.WriteLine("Товар: " + nazvanie);
-        //    Console.WriteLine("Стоимость товара: " + stoimost + " рублей");
-        //    Console.WriteLine("Вес: " + ves + "кг");
-        //    Console.WriteLine("Расстояние: " + rasstoyanie + "м");
-        //    Console.WriteLine("Способ доставки: " + tip);
-        //    Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-        //    Console.WriteLine("Стоимость доставки: " + stoimostVesa);
-        //    Console.WriteLine("Итоговая стоимость: " + (stoimost + stoimostVesa));
-
-
-        //Задание 15
-
-        Console.WriteLine("Введите своё имя: ");
-        string imya = Console.ReadLine();
-        Console.WriteLine("Введите свой возраст: ");
-        int vozrast = int.Parse(Console.ReadLine());
-        Console.WriteLine("Введите начальный баланс: ");
-        double balance = double.Parse(Console.ReadLine());
-        Console.WriteLine("Введите тип счёта: 1 - дебетовый, 2 - накопительный, 3 - премиальный");
-        int tipScheta = int.Parse(Console.ReadLine());
-        Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-        Console.WriteLine("Выберите операцию: 1 - пополнить счёт, 2 - снять деньги, 3 - проверить баланс, 4 - получить информацию о счёте");
-        int operation = int.Parse(Console.ReadLine());
-        if (operation == 1)
+        Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Пиццерия у дома~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+        Console.WriteLine("Введите название товара: ");
+        string nazvanie = Console.ReadLine();
+        Console.WriteLine("Введите стоимость товара (в рублях): ");
+        double stoimost = double.Parse(Console.ReadLine());
+        Console.WriteLine("Введите вес товара (в килограммах): ");
+        double ves = double.Parse(Console.ReadLine());
+        Console.WriteLine("Введите расстояние доставки (в метрах): ");
+        double rasstoyanie = double.Parse(Console.ReadLine());
+        Console.WriteLine("Введите способ доставки: 1 - Обычная, 2 - Экспресс, 3 - Самовывоз");
+        int sposob = int.Parse(Console.ReadLine());
+        int stoimostVesa = 0;
+        string tip = "Обычная";
+        //Проверка ввода
+        if (sposob != 1 & sposob != 2 & sposob != 3)
         {
-            Console.WriteLine("На какую сумму вы хотите пополнить счёт?");
-            double summaPopolneniya = double.Parse(Console.ReadLine());
-            if (summaPopolneniya > 0 & summaPopolneniya != 0)
-            {
-                balance = balance + summaPopolneniya;   
-            }
-            else
-            {
-                Console.WriteLine("Ошибка");
-            }
-                
+            Console.WriteLine("Ошибка, вводите либо 1, либо 2, либо 3");
+            return;
         }
-        if (operation == 2)
+        else
         {
-            Console.WriteLine("Какую сумму вы хотите снять?");
-            double summaSnyatiya = double.Parse(Console.ReadLine());
-            if ()
-        }
+            //Стоимость
+            switch (sposob)
+            {
+                case 1:
+                    if (ves <= 1)
+                    {
+                        stoimostVesa = 100;
+                    }
+                    if (ves > 1 & ves <= 5)
+                    {
+                        stoimostVesa = 200;
+                    }
+                    if (ves > 5 & ves <= 10)
+                    {
+                        stoimostVesa = 350;
+                    }
+                    if (ves > 10)
+                    {
+                        stoimostVesa = 500;
+                    }
+                    if (stoimost > 5000)
+                    {
+                        stoimostVesa = 0;
+                    }
+                    if (ves < 0 || ves == 0)
+                    {
+                        Console.WriteLine("Ошибка, вес не может быть отрицательным");
+                    }
+                    break;
+                case 2:
+                    if (ves <= 1)
+                    {
+                        stoimostVesa = 200;
+                    }
+                    if (ves > 1 & ves <= 5)
+                    {
+                        stoimostVesa = 400;
+                    }
+                    if (ves > 5 & ves <= 10)
+                    {
+                        stoimostVesa = 700;
+                    }
+                    if (ves > 10)
+                    {
+                        stoimostVesa = 1000;
+                    }
+                    if (stoimost > 5000)
+                    {
+                        stoimostVesa = 0;
+                    }
+                    if (ves < 0 || ves == 0)
+                    {
+                        Console.WriteLine("Ошибка, вес не может быть отрицательным");
+                    }
+                    break;
+                case 3:
+                    stoimostVesa = 0;
+                    break;
+            }
+            switch (sposob)
+            {
+                case 1:
+                    tip = "Обычная";
+                    break;
+                case 2:
+                    tip = "Экспресс";
+                    break;
+                case 3:
+                    tip = "Самовывоз";
+                    break;
+            }
+            Console.WriteLine("Товар: " + nazvanie);
+            Console.WriteLine("Стоимость товара: " + stoimost + " рублей");
+            Console.WriteLine("Вес: " + ves + "кг");
+            Console.WriteLine("Расстояние: " + rasstoyanie + "м");
+            Console.WriteLine("Способ доставки: " + tip);
+            Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+            Console.WriteLine("Стоимость доставки: " + stoimostVesa);
+            Console.WriteLine("Итоговая стоимость: " + (stoimost + stoimostVesa));
+
+
+            //Задание 15
+
+            //Console.WriteLine("Введите своё имя: ");
+            //string imya = Console.ReadLine();
+            //Console.WriteLine("Введите свой возраст: ");
+            //int vozrast = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Введите начальный баланс: ");
+            //double balance = double.Parse(Console.ReadLine());
+            //Console.WriteLine("Введите тип счёта: 1 - дебетовый, 2 - накопительный, 3 - премиальный");
+            //int tipScheta = int.Parse(Console.ReadLine());
+            //Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+            //Console.WriteLine("Выберите операцию: 1 - пополнить счёт, 2 - снять деньги, 3 - проверить баланс, 4 - получить информацию о счёте");
+            //int operation = int.Parse(Console.ReadLine());
+            //if (operation == 1)
+            //{
+            //    Console.WriteLine("На какую сумму вы хотите пополнить счёт?");
+            //    double summaPopolneniya = double.Parse(Console.ReadLine());
+            //    if (summaPopolneniya > 0 & summaPopolneniya != 0)
+            //    {
+            //        balance = balance + summaPopolneniya;   
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("Ошибка");
+            //    }
+
+            //}
+            //if (operation == 2)
+            //{
+            //    Console.WriteLine("Какую сумму вы хотите снять?");
+            //    double summaSnyatiya = double.Parse(Console.ReadLine());
+            //    if ()
+            //}
 
 
         }
