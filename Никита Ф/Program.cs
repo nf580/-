@@ -132,7 +132,8 @@ class Program
         //        }
         //        else
         //        {
-        //            error = false; break;
+        //            error = false; Console.WriteLine("Ошибка, делить на 0 нельзя")
+        //            break;
         //        }
         //    default:
         //        Console.WriteLine("Ошибка, введите *, /, + или -");
@@ -146,6 +147,7 @@ class Program
         //Задание 13
         //Калькулятор доставки
         Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Пиццерия у дома~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+        //Получение данных
         Console.WriteLine("Введите название товара: ");
         string name = Console.ReadLine();
         Console.WriteLine("Введите стоимость товара (в рублях): ");
@@ -158,8 +160,10 @@ class Program
         int type = int.Parse(Console.ReadLine());
         int priceWeight = 0;
         string tip = "Обычная";
+        //Обработка данных
         //Проверка ввода
-        if (type != 1 & type != 2 & type != 3)
+        
+        if (type > 3 & type<1)
         {
             Console.WriteLine("Ошибка, вводите либо 1, либо 2, либо 3");
             return;
@@ -237,6 +241,7 @@ class Program
                     tip = "Самовывоз";
                     break;
             }
+            //Вывод данных
             Console.WriteLine("Товар: " + name);
             Console.WriteLine("Стоимость товара: " + price + " рублей");
             Console.WriteLine("Вес: " + weight + "кг");
