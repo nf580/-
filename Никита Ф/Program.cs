@@ -4,19 +4,19 @@
 //Console.WriteLine("Никита");
 
 //Задание 2
-//string slovo = "Hello World!";
+//string word = "Hello World!";
 //Console.WriteLine("Привет мир!");
-//Console.WriteLine(slovo);
+//Console.WriteLine(word);
 
 //Задание 3
 //string name = "Никита";
 //int age = 14;
 //double height = 170.2;
-//bool otvet = true;
+//bool answer = true;
 //Console.WriteLine("Имя: " + name);
 //Console.WriteLine("Возраст: " + age);
 //Console.WriteLine("Рост: " + height);
-//Console.WriteLine("Нравится ли мне программировать: " + otvet);
+//Console.WriteLine("Нравится ли мне программировать: " + answer);
 
 //Задание 4
 //string name = "Никита";
@@ -55,10 +55,10 @@
 //Console.WriteLine("Периметр прямоугольника: " + (height + width) * 2);
 
 //Задание 9
-//int odin_tovar = 350;
-//int vtoroy_tovar = 120;
+//int first = 350;
+//int second = 120;
 //int discount = 50;
-//Console.WriteLine("Стоимость товаров со скидкой: " + ((odin_tovar + vtoroy_tovar) - discount));
+//Console.WriteLine("Стоимость товаров со скидкой: " + ((first + second) - discount));
 
 //Задание 10
 //int number = 42;
@@ -72,14 +72,14 @@
 //int a = 10;
 //int b = 5;
 //int c = 2;
-//int resultPesyat = a * b;
-//Console.WriteLine(resultPesyat);
-//int resultCTO = a * b * c;
-//Console.WriteLine(resultCTO);
+//int fifty = a * b;
+//Console.WriteLine(fifty);
+//int hundred = a * b * c;
+//Console.WriteLine(hundred);
 
 
 //Шифр ЦЕЗАРЯ
-//char[] Bykvi = { 'А', 'Б', 'В', 'Г', 'Д', 'Е', 'Ё', 'Ж', 'З', 'И', 'Й', 'К', 'Л', 'М', 'Н', 'О', 'П', 'Р', 'С', 'Т', 'У', 'Ф', 'Х', 'Ц', 'Ч', 'Ш', 'Щ', 'Ъ', 'Ы', 'Ь', 'Э', 'Ю', 'Я', };
+//char[] letters = { 'А', 'Б', 'В', 'Г', 'Д', 'Е', 'Ё', 'Ж', 'З', 'И', 'Й', 'К', 'Л', 'М', 'Н', 'О', 'П', 'Р', 'С', 'Т', 'У', 'Ф', 'Х', 'Ц', 'Ч', 'Ш', 'Щ', 'Ъ', 'Ы', 'Ь', 'Э', 'Ю', 'Я', };
 //Console.WriteLine("Введите слово :");
 //string userWord = Console.ReadLine();
 //Console.WriteLine("На сколько символов нужно шифровать? ");
@@ -91,7 +91,7 @@
 //{
 
 
-//    char itog = Bykvi[n + colvo];
+//    char itog = letters[n + colvo];
 //    Console.WriteLine(itog);
 //    n = n + 1;
 
@@ -105,40 +105,40 @@ class Program
 
         //Калькулятор, задание 8
         //Console.WriteLine("Введите первое число: ");
-        //int pervoe = int.Parse(Console.ReadLine());
+        //int first = int.Parse(Console.ReadLine());
         //Console.WriteLine("Введите второе число: ");
-        //int vtoroe = int.Parse(Console.ReadLine());
+        //int second = int.Parse(Console.ReadLine());
         //Console.WriteLine("Введите тип операции: *,/,+,-");
-        //string tip = Console.ReadLine();
+        //string type = Console.ReadLine();
 
         //int result = 0;
-        //bool oshibka = true;
-        //switch (tip)
+        //bool error = true;
+        //switch (type)
         //{
         //    case "+":
-        //        result = pervoe + vtoroe;
+        //        result = first + second;
         //        break;
         //    case "-":
-        //        result = pervoe - vtoroe;
+        //        result = first - second;
         //        break;
         //    case "*":
-        //        result = pervoe * vtoroe;
+        //        result = first * second;
         //        break;
         //    case "/":
-        //        if (vtoroe != 0)
+        //        if (second != 0)
         //        {
-        //            result = pervoe / vtoroe;
+        //            result = first / second;
         //            break;
         //        }
         //        else
         //        {
-        //            oshibka = false; break;
+        //            error = false; break;
         //        }
         //    default:
         //        Console.WriteLine("Ошибка, введите *, /, + или -");
         //        break;
         //}
-        //if (oshibka = true)
+        //if (error = true)
         //{
         //    Console.WriteLine(result);
         //}
@@ -147,19 +147,19 @@ class Program
         //Калькулятор доставки
         Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Пиццерия у дома~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
         Console.WriteLine("Введите название товара: ");
-        string nazvanie = Console.ReadLine();
+        string name = Console.ReadLine();
         Console.WriteLine("Введите стоимость товара (в рублях): ");
-        double stoimost = double.Parse(Console.ReadLine());
+        double price = double.Parse(Console.ReadLine());
         Console.WriteLine("Введите вес товара (в килограммах): ");
-        double ves = double.Parse(Console.ReadLine());
+        double weight = double.Parse(Console.ReadLine());
         Console.WriteLine("Введите расстояние доставки (в метрах): ");
-        double rasstoyanie = double.Parse(Console.ReadLine());
+        double distance = double.Parse(Console.ReadLine());
         Console.WriteLine("Введите способ доставки: 1 - Обычная, 2 - Экспресс, 3 - Самовывоз");
-        int sposob = int.Parse(Console.ReadLine());
-        int stoimostVesa = 0;
+        int type = int.Parse(Console.ReadLine());
+        int priceWeight = 0;
         string tip = "Обычная";
         //Проверка ввода
-        if (sposob != 1 & sposob != 2 & sposob != 3)
+        if (type != 1 & type != 2 & type != 3)
         {
             Console.WriteLine("Ошибка, вводите либо 1, либо 2, либо 3");
             return;
@@ -167,65 +167,65 @@ class Program
         else
         {
             //Стоимость
-            switch (sposob)
+            switch (type)
             {
                 case 1:
-                    if (ves <= 1)
+                    if (weight <= 1)
                     {
-                        stoimostVesa = 100;
+                        priceWeight = 100;
                     }
-                    if (ves > 1 & ves <= 5)
+                    else if (weight > 1 & weight <= 5)
                     {
-                        stoimostVesa = 200;
+                        priceWeight = 200;
                     }
-                    if (ves > 5 & ves <= 10)
+                    else if (weight > 5 & weight <= 10)
                     {
-                        stoimostVesa = 350;
+                        priceWeight = 350;
                     }
-                    if (ves > 10)
+                    else if (weight > 10)
                     {
-                        stoimostVesa = 500;
+                        priceWeight = 500;
                     }
-                    if (stoimost > 5000)
+                    else if (price > 5000)
                     {
-                        stoimostVesa = 0;
+                        priceWeight = 0;
                     }
-                    if (ves < 0 || ves == 0)
+                    else if (weight < 0 || weight == 0)
                     {
                         Console.WriteLine("Ошибка, вес не может быть отрицательным");
                     }
                     break;
                 case 2:
-                    if (ves <= 1)
+                    if (weight <= 1)
                     {
-                        stoimostVesa = 200;
+                        priceWeight = 200;
                     }
-                    if (ves > 1 & ves <= 5)
+                    else if (weight > 1 & weight <= 5)
                     {
-                        stoimostVesa = 400;
+                        priceWeight = 400;
                     }
-                    if (ves > 5 & ves <= 10)
+                    else if (weight > 5 & weight <= 10)
                     {
-                        stoimostVesa = 700;
+                        priceWeight = 700;
                     }
-                    if (ves > 10)
+                    else if (weight > 10)
                     {
-                        stoimostVesa = 1000;
+                        priceWeight = 1000;
                     }
-                    if (stoimost > 5000)
+                    else if (price > 5000)
                     {
-                        stoimostVesa = 0;
+                        priceWeight = 0;
                     }
-                    if (ves < 0 || ves == 0)
+                    else if (weight < 0 || weight == 0)
                     {
                         Console.WriteLine("Ошибка, вес не может быть отрицательным");
                     }
                     break;
                 case 3:
-                    stoimostVesa = 0;
+                    priceWeight = 0;
                     break;
             }
-            switch (sposob)
+            switch (type)
             {
                 case 1:
                     tip = "Обычная";
@@ -237,14 +237,14 @@ class Program
                     tip = "Самовывоз";
                     break;
             }
-            Console.WriteLine("Товар: " + nazvanie);
-            Console.WriteLine("Стоимость товара: " + stoimost + " рублей");
-            Console.WriteLine("Вес: " + ves + "кг");
-            Console.WriteLine("Расстояние: " + rasstoyanie + "м");
+            Console.WriteLine("Товар: " + name);
+            Console.WriteLine("Стоимость товара: " + price + " рублей");
+            Console.WriteLine("Вес: " + weight + "кг");
+            Console.WriteLine("Расстояние: " + distance + "м");
             Console.WriteLine("Способ доставки: " + tip);
             Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-            Console.WriteLine("Стоимость доставки: " + stoimostVesa);
-            Console.WriteLine("Итоговая стоимость: " + (stoimost + stoimostVesa));
+            Console.WriteLine("Стоимость доставки: " + priceWeight);
+            Console.WriteLine("Итоговая стоимость: " + (price + priceWeight));
 
 
             //Задание 15
@@ -280,7 +280,7 @@ class Program
             //    double summaSnyatiya = double.Parse(Console.ReadLine());
             //    if ()
             //}
-
+            // НЕДОДЕЛАНО
 
         }
     }
